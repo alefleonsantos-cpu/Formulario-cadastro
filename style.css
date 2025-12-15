@@ -1,0 +1,55 @@
+/* Definição de Cores Personalizadas (Nova Paleta: Roxo/Lavanda) */
+:root {
+    --primary-color: #7d5fff; /* Roxo/Lavanda Vibrante */
+    --primary-dark: #6a4deb; /* Roxo mais escuro para hover */
+    --secondary-color: #6c757d;
+    --card-background: #f7f9fc; /* Fundo do card ligeiramente cinza/azul */
+}
+
+/* Estilo do Body: Fundo claro e suave */
+.bg-light {
+    background-color: #e9ecef !important; /* Fundo mais claro */
+}
+
+/* Estilo do Card Container */
+.custom-card {
+    border-radius: 15px;
+    border: none;
+    background-color: var(--card-background); /* Aplica o fundo suave */
+    transition: transform 0.3s ease;
+}
+
+/* Título e Subtítulos */
+.card-title.text-primary {
+    color: var(--primary-color) !important;
+    font-weight: 700;
+}
+
+.text-secondary {
+    color: #495057 !important; /* Cinza escuro para melhor leitura */
+    font-weight: 600;
+}
+
+/* Estilo dos Inputs (Melhorando o foco) */
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(125, 95, 255, 0.25); /* Sombra de foco com a nova cor */
+}
+
+/* Estilo do Botão de Envio com Gradiente Roxo */
+.custom-btn-submit {
+    /* Novo Gradiente Roxo */
+    background-image: linear-gradient(to right, var(--primary-color) 0%, #a48eff 100%);
+    border: none;
+    font-weight: bold;
+    padding: 12px 0;
+    transition: all 0.4s ease;
+}
+
+.custom-btn-submit:hover {
+    /* Gradiente invertido e escurecido no hover */
+    background-image: linear-gradient(to right, #a48eff 0%, var(--primary-color) 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(125, 95, 255, 0.4); /* Sombra mais intensa no hover */
+}
